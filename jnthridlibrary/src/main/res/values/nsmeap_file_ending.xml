@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="fileEndingImage">
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+        <item>.BMP</item>
+    </array>
+    <array name="fileEndingAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ogg</item>
+        <item>.midi</item>
+        <item>.wma</item>
+    </array>
+    <array name="fileEndingVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.flv</item>
+        <item>.3gp</item>
+        <item>.MPEG</item>
+        <item>.f4v</item>
+    </array>
+    <array name="fileEndingWord">
+        <item>.txt</item>
+        <item>.doc</item>
+        <item>.docx</item>
+    </array>
+    <array name="fileEndingPdf">
+        <item>.pdf</item>
+    </array>
+    <array name="fileEndingExcel">
+        <item>.xlsx</item>
+        <item>.xls</item>
+    </array>
+    <array name="fileEndingPpt">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </array>
+    <array name="fileEndingHtml">
+        <item>.html</item>
+    </array>
+
+    <!--.c,.conf,.cpp,.h,.java,.log,.prop,.rc,.sh,.txt,.xml-->
+    <array name="fileEndWithTxt">
+        <item>.c</item>
+        <item>.conf</item>
+        <item>.cpp</item>
+        <item>.h</item>
+        <item>.java</item>
+        <item>.log</item>
+        <item>.prop</item>
+        <item>.properties</item>
+        <item>.rc</item>
+        <item>.sh</item>
+        <item>.txt</item>
+        <item>.xml</item>
+        <item>.jsp</item>
+    </array>
+
+    <array name="fileEndWithZip">
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.jar</item>
+    </array>
+
+    <array name="fileEndWithApk">
+        <item>.apk</item>
+        <item>.ipa</item>
+    </array>
+
+</resources>

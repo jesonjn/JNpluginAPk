@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/daikuanlilv_list_bg" >
+
+        <LinearLayout
+            android:id="@+id/calculator_activity_hkjhjsq_list_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cunkuanlilv_ht"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="期数"
+                android:textColor="#5d1133"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shuxian_white"
+                android:contentDescription="@null" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="还款金额(元)"
+                android:textColor="#5d1133"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shuxian_white"
+                android:contentDescription="@null" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="利息"
+                android:textColor="#5d1133"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculator_activity_hkjhjsq_list_header"
+            android:background="@drawable/hengxian_white"
+            android:contentDescription="@null" >
+        </ImageView>
+
+        <ListView
+            android:id="@+id/huankuanjisuanqi_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/img" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

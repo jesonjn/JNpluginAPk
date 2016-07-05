@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="progressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="popProgressDialog" parent="@style/progressDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- calendar_sample4 -->
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textColor">@color/calendar_text_active</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:textAlignment">center</item> -->
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textColor">@color/calendar_text_active</item>
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 动态扩展菜单 -->
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="ActionBarItem">
+        <item name="android:layout_width">@dimen/actionbar_item_width</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:layout_marginLeft">1dip</item>
+    </style>
+
+    <style name="ActionBarHomeItem" parent="ActionBarItem">
+        <item name="android:layout_marginRight">1dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+    </style>
+
+    <style name="ActionBarHomeLogo">
+        <item name="android:layout_marginRight">1dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+    </style>
+
+    <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small"></style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dip</item>
+    </style>
+
+</resources>

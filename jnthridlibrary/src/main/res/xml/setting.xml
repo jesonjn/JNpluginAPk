@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="画笔" >
+        <Preference
+            android:key="@string/pen_width_key"
+            android:summary="设置画笔的宽度"
+            android:title="宽度" />
+        <Preference
+            android:key="@string/pen_color_key"
+            android:summary="设置画笔的颜色"
+            android:title="颜色" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pen_style_key"
+            android:summaryOff="绘图时不填充内部"
+            android:summaryOn="绘图时填充内部"
+            android:title="风格" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="全屏" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/full_screen"
+            android:summaryOff="不全屏显示画板"
+            android:summaryOn="全屏显示画板"
+            android:title="全屏" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

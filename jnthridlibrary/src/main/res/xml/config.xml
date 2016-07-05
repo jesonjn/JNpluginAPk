@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget
+    id="io.cordova.helloCordova"
+    version="2.0.0"
+    xmlns="http://www.w3.org/ns/widgets" >
+
+    <access origin="*.apache.org" />
+
+    <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
+    <content src="index.html" />
+
+    <log level="DEBUG" />
+
+    <!-- Preferences for Android -->
+    <preference
+        name="useBrowserHistory"
+        value="true" />
+    <preference
+        name="exit-on-suspend"
+        value="false" />
+
+    <feature name="Activity" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.test.ActivityPlugin" />
+    </feature>
+    <feature name="App" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.App" />
+    </feature>
+    <feature name="Geolocation" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.GeoBroker" />
+    </feature>
+    <feature name="Device" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.Device" />
+    </feature>
+    <feature name="Accelerometer" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.AccelListener" />
+    </feature>
+    <feature name="Compass" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.CompassListener" />
+    </feature>
+    <feature name="Media" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.AudioHandler" />
+    </feature>
+    <feature name="Camera" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.CameraLauncher" />
+    </feature>
+    <feature name="Contacts" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.ContactManager" />
+    </feature>
+    <feature name="File" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.FileUtils" />
+    </feature>
+    <feature name="NetworkStatus" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.NetworkManager" />
+    </feature>
+    <feature name="Notification" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.Notification" />
+    </feature>
+    <feature name="Storage" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.Storage" />
+    </feature>
+    <feature name="FileTransfer" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.FileTransfer" />
+    </feature>
+    <feature name="Capture" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.Capture" />
+    </feature>
+    <feature name="Battery" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.BatteryListener" />
+    </feature>
+    <feature name="SplashScreen" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.SplashScreen" />
+    </feature>
+    <feature name="Echo" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.Echo" />
+    </feature>
+    <feature name="Globalization" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.Globalization" />
+    </feature>
+    <feature name="InAppBrowser" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.cordova.InAppBrowser" />
+    </feature>
+    
+    <!-- 联网请求插件 -->
+    <feature name="NSMeapWebRequest" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapNetPlugin" />
+    </feature>
+    
+    <!-- 日历日期插件 -->
+    <feature name="NSMeapDatePicker" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapDatePickerPlugin" />
+    </feature>
+    
+    <!-- 小版本更新插件 -->
+    <feature name="NSMeapCheckWebUpdate" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapCheckUpdatePlugin" />
+    </feature>
+    
+    <!-- 大版本更新插件 -->
+    <feature name="NSMeapCheckAppUpdate" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapCheckUpdatePlugin" />
+    </feature>
+    
+    <!-- 网络状态插件 -->
+    <feature name="NSMeapNetworkStatus" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapNetConnectStatusPlugin" />
+    </feature>
+    
+    <!-- 二维码插件 -->
+    <feature name="NSMeapQRCode" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapBarcodeScannerPlugin" />
+    </feature>
+    
+    <feature name="NSMeapNativeLogin" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapLoginPlugin" />
+    </feature>
+    <feature name="NSMeapMedia" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapMediaPlugin" />
+    </feature>
+    <feature name="NSMeapMessage" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapSmsPlugin" />
+    </feature>
+    <feature name="NSMeapNativeEncryptData" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapSaveDataEncryptPlugin" />
+    </feature>
+    <feature name="NSMeapTelPhone" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapTelPlugin" />
+    </feature>
+    <feature name="NSMeapNativeRemember" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapRememberPlugin" />
+    </feature>
+    <feature name="NSMeapFileManager" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapFilePlugin" />
+    </feature>
+    <feature name="NSMeapFileDowload" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapFileDownloadPlugin" />
+    </feature>
+    <feature name="NSMeapFileUpload" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapFileUploadPlugin" />
+    </feature>
+    
+	<!-- 验证码 -->
+    <feature name="NSMeapGetAuthCode" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapGetAuthCodePlugin" />
+    </feature>
+    <feature name="NSMeapPasswordLock" >
+        <param
+            name="android-package"
+            value="com.example.andoridplugindemo.NSMeapLockPlugin" />
+    </feature>
+    <feature name="NSMeapScreemTimer" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapScreemTouchTaskTimerPlugin" />
+    </feature>
+    <feature name="NSMeapJumpAPP" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapJumpAPPPlugin" />
+    </feature>
+    <feature name="NSMeapInstallAPP" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapInstallAPPPlugin" />
+    </feature>
+    <feature name="NSMeapCheckAPPExist" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapCheckAPPPlugin" />
+    </feature>
+    <feature name="NSMeapScanOfficeFile" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapScanOfficeFilePlugin" />
+    </feature>
+    <feature name="NSMeapEditOfficeFile" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapEditOfficeFilePlugin" />
+    </feature>
+    <feature name="NSMeapKillAPP" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapKillAPPPlugin" />
+    </feature>
+    <feature name="NSMeapScreenResolution" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapScreenResolutionPlugin" />
+    </feature>
+    <feature name="NSMeapContact" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapContactPlugin" />
+    </feature>
+    
+    <!-- 指令集 -->
+    <feature name="NSMeapCommand" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapCommandPlugin" />
+    </feature>
+    
+    <!-- 图表展示 -->
+    <feature name="NSMeapChart" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapChartPlugin" />
+    </feature>
+    
+    <!-- 打开文件 -->
+    <feature name="NSMeapOpenFile" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapFileOpenPlugin" />
+    </feature>
+    
+    <!-- 地图 -->
+    <feature name="NSeapMapPlugin" >
+        <param
+            name="android-package"
+            value="com.nqsky.meap.plugin.NSMeapMapPlugin" />
+    </feature>
+
+</widget>

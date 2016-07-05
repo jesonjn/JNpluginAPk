@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/regist_exception_feedback_method"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="增加反馈"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="点击“增加反馈”会使程序在闪退的时候保存反馈信息到程序包的log文件夹下。"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/catch_exception"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="测试"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="点击“测试”进行闪退反馈测试，程序页面闪退后会在程序包中log下创建一个闪退的日志。"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/get_log"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="日志统计"
+        android:textColor="@color/black" />
+    
+    <TextView 
+        android:id="@+id/log_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+    
+    <com.nqsky.meap.widget.chart.NSMeapPieChartBuilder
+        android:id="@+id/log_info_piechar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+    </com.nqsky.meap.widget.chart.NSMeapPieChartBuilder>
+
+</LinearLayout>

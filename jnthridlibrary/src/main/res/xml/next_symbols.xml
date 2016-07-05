@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0px"
+    android:keyHeight="50dip"
+    android:keyWidth="25%p"
+    android:verticalGap="0px" >
+
+    <Row>
+        <Key
+            android:codes="34"
+            android:keyLabel="@string/yinhao" />
+        <Key
+            android:codes="91"
+            android:keyLabel="[" />
+        <Key
+            android:codes="93"
+            android:keyLabel="]" />
+        <Key
+            android:codes="500"
+            android:keyEdgeFlags="right"
+            android:keyLabel="向前" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="123"
+            android:keyLabel="{" />
+        <Key
+            android:codes="125"
+            android:keyLabel="}" />
+        <Key
+            android:codes="65509"
+            android:keyLabel="￥" />
+        <Key
+            android:codes="600"
+            android:keyEdgeFlags="right"
+            android:keyLabel="向后" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="200"
+            android:keyLabel="abc" />
+        <Key
+            android:codes="300"
+            android:keyLabel="123" />
+        <Key
+            android:codes="-5"
+            android:keyIcon="@drawable/keyboard_delete" />
+        <Key
+            android:codes="-3"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"
+            android:keyLabel="完成" />
+    </Row>
+
+</Keyboard>

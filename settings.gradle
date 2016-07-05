@@ -1,0 +1,1 @@
+include ':app', ':jnpluginlibrary', ':demo1', ':jnthridlibrary', ':DroidPlugin'

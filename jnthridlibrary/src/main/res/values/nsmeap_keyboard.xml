@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 安全键盘，随机数字键盘 -->
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="key_height">50.0sp</dimen>
+
+</resources>

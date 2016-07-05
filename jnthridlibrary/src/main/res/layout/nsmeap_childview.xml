@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/circlewell"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@null" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/squarewell"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/trianglewell"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:contentDescription="@null" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/circleblock"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="200dip"
+                android:contentDescription="@null" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/squareblock"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dip"
+                android:contentDescription="@null" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/triangleblock"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="200dip"
+                android:contentDescription="@null" >
+            </ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

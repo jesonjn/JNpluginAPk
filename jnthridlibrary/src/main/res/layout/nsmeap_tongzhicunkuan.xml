@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/calculator_activity_body_tzck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/calculator_activity_tzck_body_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dp"
+                android:text="类型"
+                android:textColor="#5d1133"
+                android:textSize="15sp" >
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/calculator_tzck_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/type"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/calculator_tzck_radionbutton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/circle_rb_selector"
+                    android:checked="true"
+                    android:text="一天通知"
+                    android:textColor="#5d1133"
+                    android:textSize="15sp" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/calculator_tzck_radionbutton02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:button="@drawable/circle_rb_selector"
+                    android:text="七天通知"
+                    android:textColor="#5d1133"
+                    android:textSize="15sp" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calculator_tzck_linear01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculator_activity_tzck_body_top"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/calculator_tzck_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/calculator_text_bg"
+                android:orientation="vertical"
+                android:paddingBottom="11dip"
+                android:paddingLeft="16dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起存日期"
+                    android:textColor="#5d1133"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/calculator_tzck_qcrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="2013年04月22日"
+                    android:textColor="#333333"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/calculator_text_bg"
+                android:orientation="vertical"
+                android:paddingBottom="11dip"
+                android:paddingLeft="16dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提取日期"
+                    android:textColor="#5d1133"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/calculator_tzck_cq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#333333"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calculator_tzck_linear02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculator_tzck_linear01"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/calculator_text_bg"
+                android:orientation="vertical"
+                android:paddingBottom="11dip"
+                android:paddingLeft="16dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存款金额(元)"
+                    android:textColor="#5d1133"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/calculator_tzck_ckjine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@null"
+                    android:hint="0.00"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/calculator_text_bg"
+                android:orientation="vertical"
+                android:paddingBottom="11dip"
+                android:paddingLeft="16dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年利率(%)"
+                    android:textColor="#666666"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/calculator_tzck_nianlilv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@null"
+                    android:hint="0.00"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calculator_tzck_linear03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calculator_tzck_linear02"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/calculator_text_bg"
+                android:orientation="vertical"
+                android:paddingBottom="11dip"
+                android:paddingLeft="16dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="利息(元)"
+                    android:textColor="#666666"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/calculator_tzck_lixi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="0.00"
+                    android:textColor="#333333"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/calculator_text_bg"
+                android:orientation="vertical"
+                android:paddingBottom="11dip"
+                android:paddingLeft="16dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本息合计(元)"
+                    android:textColor="#666666"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/calculator_tzck_benxiheji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="0.00"
+                    android:textColor="#333333"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="left" >
+
+    <TextView
+        android:id="@+id/nsmeap_loading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请稍后"
+        android:textColor="#ffffff"
+        android:textSize="20sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/nsmeap_loading_img01"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:src="@drawable/disk"
+        android:visibility="invisible" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/nsmeap_loading_img02"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="3dip"
+        android:src="@drawable/disk"
+        android:visibility="invisible" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/nsmeap_loading_img03"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dip"
+        android:src="@drawable/disk"
+        android:visibility="invisible" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/nsmeap_loading_img04"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dip"
+        android:src="@drawable/disk"
+        android:visibility="invisible" >
+    </ImageView>
+
+</LinearLayout>

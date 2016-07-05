@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/calculator_activity_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ckjsq_01"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/calculator_activity_tv_cunkuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/calculator_activity_tv_daikuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/calculator_activity_tv_huankuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:id="@+id/calculator_activity_head_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 导航 -->
+
+            <LinearLayout
+                android:id="@+id/calculator_activity_relative_ckjsq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calculator_activity_head_bg"
+                android:visibility="visible" >
+
+                <!-- 存款计算器 -->
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="13dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="13dip" >
+
+                    <RadioButton
+                        android:id="@+id/calculator_activity_radiobutton_zczq"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/rb_selector_ckjsq_zczq"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/calculator_activity_radiobutton_lczq"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/rb_selector_ckjsq_lczq"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/calculator_activity_radiobutton_tzck"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/rb_selector_ckjsq_tzck"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/calculator_activity_radiobutton_hq"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/rb_selector_ckjsq_hq"
+                        android:button="@null" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/calculator_activity_body_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/calculator_activity_relative_ckjsq"
+                android:background="@drawable/calculator_activity_body_bg" >
+
+                <LinearLayout
+                    android:id="@+id/calculator_activity_body_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/calculator_activity_relative_hkjhjsq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calculator_activity_body_linear"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/huankuan_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/home_btn"
+                        android:shadowColor="#ffffff"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="明细"
+                        android:textColor="#330c23"
+                        android:textSize="20sp" />
+                    <!-- 还款计划计算器 -->
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
